@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the viewport to ensure proper rendering and touch zooming on mobile devices -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Set the document compatibility mode -->
+    <title>Calculator</title>
+    <!-- Set the title of the document -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Link the external CSS file to style the calculator -->
+    <script src="script.js" defer></script>
+    <!-- Link the external JavaScript file with the 'defer' attribute to ensure that the HTML content is loaded before the script runs -->
+  </head>
+  <body>
+    <!-- The body of the HTML document -->
+    <div class="calculator-grid">
+      <!-- A div with class 'calculator-grid' to hold all the calculator buttons -->
+      <div class="output">
+        <!-- A div with class 'output' to hold the display output of the calculator -->
+        <div data-previous-operand class="previous-operand"></div>
+        <!-- A div with a data attribute 'data-previous-operand' and class 'previous-operand' to display the previous operand in the calculation -->
+        <div data-current-operand class="current-operand"></div>
+        <!-- A div with a data attribute 'data-current-operand' and class 'current-operand' to display the current operand in the calculation -->
+      </div>
+      <button data-all-clear class="span-two">AC</button>
+      <!-- A button with a data attribute 'data-all-clear' and class 'span-two' to clear all the operands -->
+      <button data-delete>DEL</button>
+      <!-- A button with a data attribute 'data-delete' to delete a single digit from the current operand -->
+      <button data-operation>÷</button>
+      <!-- A button with a data attribute 'data-operation' to select the addition operation -->
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>*</button>
+      <!-- A button with a data attribute 'data-operation' to select the multiplication operation -->
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <!-- A button with a data attribute 'data-operation' to select the subtraction operation -->
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>-</button>
+      <!-- A button with a data attribute 'data-operation' to select the division operation -->
+      <button data-number>.</button>
+      <!-- A button with a data attribute 'data-number' for decimal point -->
+      <button data-number>0</button>
+      <button data-equals class="span-two">=</button>
+      <!-- A button with a data attribute 'data-equals' and class 'span-two' to evaluate the current expression -->
+    </div>
+  </body>
+</html>
